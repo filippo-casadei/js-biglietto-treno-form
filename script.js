@@ -38,6 +38,8 @@ const genera = document.querySelector(`#genera`);
 genera.addEventListener("click", clickGeneraHandler);
 
 function clickGeneraHandler() {
-
-
+    let etaUtente = parseInt(eta.value)
+    let kmUtente = parseInt(km.value)
+    console.log(kmUtente, etaUtente);
+    
 }
