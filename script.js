@@ -40,6 +40,27 @@ genera.addEventListener("click", clickGeneraHandler);
 function clickGeneraHandler() {
     let etaUtente = parseInt(eta.value)
     let kmUtente = parseInt(km.value)
+    
+    let prezzo = calcoloPrezzoBiglietto(etaUtente,kmUtente);
+    console.log(prezzo);
+    
     console.log(kmUtente, etaUtente);
     
 }
+
+
+
+function calcoloPrezzoBiglietto(eta, km) {
+    
+    let prezzoBase = (km * 0.21);
+    let prezzoFinale = prezzoBase
+    
+    if (eta < 18) {
+        prezzoFinale = prezzoBase - (prezzoBase * 0.20)
+    }
+    else if (eta >= 65) {
+        prezzoFinale = prezzoBase - (prezzoBase * 0.40)
+    }
+    return prezzoFinale
+}
+
