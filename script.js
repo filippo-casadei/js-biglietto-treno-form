@@ -29,3 +29,15 @@
 
 // // per vedere il risultato a schermo:
 // alert(`Il prezzo del biglietto è: ${prezzoBase.toFixed(2)}`)
+// =========================================================================================
+
+const eta = document.querySelector(`#eta`);
+const km = document.querySelector(`#km`);
+const genera = document.querySelector(`#genera`);
+
+genera.addEventListener("click", clickGeneraHandler);
+
+function clickGeneraHandler() {
+
+
+}
