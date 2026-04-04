@@ -44,7 +44,7 @@ function clickGeneraHandler() {
     
     let prezzo = calcoloPrezzoBiglietto(etaUtente,kmUtente);
     console.log(prezzo);
-    
+    risultatoStampato.innerHTML = prezzo.toFixed(2);
     console.log(kmUtente, etaUtente);
     
 }
