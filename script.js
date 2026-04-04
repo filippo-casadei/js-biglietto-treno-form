@@ -34,6 +34,7 @@
 const eta = document.querySelector(`#eta`);
 const km = document.querySelector(`#km`);
 const genera = document.querySelector(`#genera`);
+let risultatoStampato = document.querySelector(`#risultatoStampato`);
 
 genera.addEventListener("click", clickGeneraHandler);
 
